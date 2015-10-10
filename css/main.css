@@ -3,3 +3,11 @@ hr{
   height: 4px;
   border: 0;
 }
+
+.heading{
+  text-align: center;
+}
+
+.bigheading {
+  text-align: center;
+}
