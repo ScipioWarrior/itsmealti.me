@@ -3,7 +3,7 @@ Base.metadata.bind = engine
 DBSession = sessionmaker(bind = engine)
 session = DBSession()
 
-restaurantName = (name = "insert_name", popularity = x, operatingHours="M:00:00-00:00, T:00:00-00:00, W ..... ", address="insert_address")
+# restaurantName = (name = "insert_name", popularity = x, operatingHours="M:00:00-00:00, T:00:00-00:00, W ..... ", address="insert_address")
 
 restaurantMedDel = (name = "Mediterannean Deli", popularity = 1, operatingHours= "M:11:00-22:00, T:11:00-23:00, W:11:00-23:00, R:11:00-22:00, F:11:00-22:00, SA:11:00-22:00, SU:11:00-21:00", address="410 W Franklin St. Chapel Hill, NC 27516")
 restaurantRams = (name = "Rams Head Dining Hall", popularity = 5, operatingHours= "M:7:00-0:00, T:7:00-0:00, W:7:00-0:00, R:7:00-0:00, F:7:00-8:00, SA:9:00-8:00, SU:9:00-0:00", address="104 Ridge Rd Chapel Hill, NC 27514")
