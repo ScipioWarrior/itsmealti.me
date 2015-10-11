@@ -22,6 +22,7 @@ var Login = {
 				
 				// Change this line for production
 				redirect_uri: "http://mealtime.elasticbeanstalk.com/start",
+				dataType: "jsonp",
 				
 				scope: "email profile",
 				approval_prompt: "force"
