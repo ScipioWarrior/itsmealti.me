@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+
 application = Flask(__name__)
 
 from sqlalchemy import create_engine
@@ -17,12 +18,17 @@ def startPage():
 
 @application.route('/create-party')
 def createParty():
+    # friend_ids = session.query(User).filter_by(id = user.id).all().split('/')
+    # friends = []
+    # for friend_id in friend_ids:
+
     return render_template('create_party.html')
 
 @application.route('/restaurants')
 def showRestaurant():
     restaurants = session.query(Restaurant).all()
     return render_template('restaurants.html', restaurants = restaurants)
+
 
 
 if __name__ == "__main__":
