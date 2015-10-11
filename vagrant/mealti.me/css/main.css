@@ -30,13 +30,21 @@ hr{
   margin: auto;
   display: block;
   background-image: url('../img/google_signin.png');
+  background-size: contain;
   color: white;
+<<<<<<< HEAD
   width: 184px;
+=======
+  width: 193px;
+>>>>>>> origin/master
   height: 48px;
   white-space: nowrap;
 }
 #customBtn:hover {
   cursor: pointer;
+<<<<<<< HEAD
   background: url('../img/google_signin.png');
 
+=======
+>>>>>>> origin/master
 }
