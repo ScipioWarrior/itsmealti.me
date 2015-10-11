@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}mealti.me - Start{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-4 align-center">
+    {% for restaurant in restaurants %}
+    <div class="restaurant">
+      <p>{{ restaurant.name }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

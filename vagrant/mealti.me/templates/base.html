@@ -29,7 +29,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <img src="{{ url_for('static', filename='logo.png') }}" height="75" style="margin-top: 20px;"/>
+        <a href="/start"><img src="{{ url_for('static', filename='logo.png') }}" height="75" style="margin-top: 20px;"/></a>
       </div>
     </div>
 
@@ -38,10 +38,10 @@
     {% block content %}
     {% endblock %}
     <hr>
-    <div class="row">
+    <div class="row footer">
       <div class="col-md-4 text-center">Ben Sagmoe, Josh Kayani, RJ Duane, Rishaan Patel</div>
-      <div class="col-md-4 text-center">Made with &lt;3 from Phillips Hall, UNC Chapel Hill</div>
-      <div class="col-md-4 text-center">This is all silly someone please fix this</div>
+      <div class="col-md-4 text-center">Made with <span id="heart">&#x2764;</span> in 247 Phillips Hall, UNC Chapel Hill</div>
+      <div class="col-md-4 text-center"><a href="/restaurants">Restaurants</a></div>
     </div>
   </div>
 

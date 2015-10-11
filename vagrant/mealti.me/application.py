@@ -19,6 +19,11 @@ def startPage():
 def createParty():
     return render_template('create_party.html')
 
+@app.route('/restaurants')
+def showRestaurant():
+    restaurants = session.query(Restaurant).all()
+    return render_template('restaurants.html', restaurants = restaurants)
+
 
 if __name__ == "__main__":
     app.debug = True

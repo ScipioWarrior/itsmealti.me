@@ -9,6 +9,14 @@ hr{
   border: 0;
 }
 
+a{
+  color: #CC6633;
+}
+
+.footer{
+  margin-bottom: 20pt;
+}
+
 .text-hr{
   display: inline-block;
   width: 50px;
@@ -23,6 +31,10 @@ hr{
 
 .bigheading {
   text-align: center;
+}
+
+#heart{
+  color: rgb(235, 83, 83);
 }
 
 /* Google sign in button */
