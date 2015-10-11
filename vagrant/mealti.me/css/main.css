@@ -29,13 +29,12 @@ hr{
   margin: auto;
   display: block;
   background-image: url('../img/google_signin.png');
+  background-size: contain;
   color: white;
-  width: 386px;
-  height: 96px;
+  width: 193px;
+  height: 48px;
   white-space: nowrap;
 }
 #customBtn:hover {
   cursor: pointer;
-  background: rgba(255,165,0,.5) url('../img/google_signin.png');
-
 }
