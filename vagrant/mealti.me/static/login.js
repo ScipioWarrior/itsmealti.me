@@ -21,7 +21,7 @@ var Login = {
 				client_id: "665577778199-dnfk2bkeb7s2c0esl6gomd0cvvubskur.apps.googleusercontent.com",
 				
 				// Change this line for production
-				redirect_uri: "/start",
+				redirect_uri: "http://mealtime.elasticbeanstalk.com/start",
 				
 				scope: "email profile",
 				approval_prompt: "force"
