@@ -4,7 +4,7 @@ var Login = {
 	* Holds info for the logged-in user's Google acc.
 	* email is their email address, name is their full name, picture is a link to their profile pic
 	*/
-	sessionInfo: {
+	session: {
 		email: "",
 		name: "",
 		picture: ""
