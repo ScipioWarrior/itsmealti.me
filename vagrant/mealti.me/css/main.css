@@ -26,34 +26,16 @@ hr{
 
 /* Google sign in button */
 #customBtn {
-      display: inline-block;
-      background: #4285f4;
-      color: white;
-      width: 190px;
-      border-radius: 5px;
-      white-space: nowrap;
-    }
-    #customBtn:hover {
-      cursor: pointer;
-    }
-    span.label {
-      font-weight: bold;
-    }
-    span.icon {
-      background: url('https://google-developers.appspot.com/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
-      display: inline-block;
-      vertical-align: middle;
-      width: 42px;
-      height: 42px;
-      border-right: #2265d4 1px solid;
-    }
-    span.buttonText {
-      display: inline-block;
-      vertical-align: middle;
-      padding-left: 42px;
-      padding-right: 42px;
-      font-size: 14px;
-      font-weight: bold;
-      /* Use the Roboto font that is loaded in the <head> */
-      font-family: 'Roboto', sans-serif;
-    }
+  margin: auto;
+  display: block;
+  background-image: url('../img/google_signin.png');
+  color: white;
+  width: 386px;
+  height: 96px;
+  white-space: nowrap;
+}
+#customBtn:hover {
+  cursor: pointer;
+  background: rgba(255,165,0,.5) url('../img/google_signin.png');
+
+}
