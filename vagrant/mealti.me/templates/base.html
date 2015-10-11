@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<meta name="author" content="">
+    <title>mealti.me</title>
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	  <!-- Google sign in -->
+	  <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  	<!-- jQuery and things-->
+  	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  	<script src="login.js"></script>
+  	<script src="ui.js"></script>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="{{ url_for('static', filename='logo.png') }}" height="75" style="margin-top: 20px;"/>
+      </div>
+    </div>
+
+    <hr class="horiz_rule">
+
+    {% block content %}
+    {% endblock %}
+    <hr>
+    <div class="row">
+      <div class="col-md-4 text-center">Ben Sagmoe, Josh Kayani, RJ Duane, Rishaan Patel</div>
+      <div class="col-md-4 text-center">Made with &lt;3 from Phillips Hall, UNC Chapel Hill</div>
+      <div class="col-md-4 text-center">This is all silly someone please fix this</div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+</body>
+</html>
