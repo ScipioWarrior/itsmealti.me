@@ -14,7 +14,8 @@ var Login = {
 	* Makes the inital log in request, asking for an OAuth 2.0 token
 	*/
 	connect: function(){
-		$.ajax({
+		
+		/*$.ajax({
 			url: "https://accounts.google.com/o/oauth2/auth",
 			data: {
 				response_type: "token",
@@ -35,7 +36,8 @@ var Login = {
 			error: function(){
 				console.log("Houston, we've got a problem");
 			}
-		});
+		});*/
+		window.location.href = "https://accounts.google.com/o/oauth2/auth?response_type=token&client_id=665577778199-dnfk2bkeb7s2c0esl6gomd0cvvubskur.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Fmealtime.elasticbeanstalk.com%2Fstart&scope=email+profile&approval_prompt=force";
 	},
 	
 	/*
