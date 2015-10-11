@@ -21,13 +21,7 @@ var Login = {
 				client_id: "665577778199-dnfk2bkeb7s2c0esl6gomd0cvvubskur.apps.googleusercontent.com",
 
 				// Change this line for production
-<<<<<<< Updated upstream
 				redirect_uri: "http://mealtime.elasticbeanstalk.com/start",
-				
-=======
-				redirect_uri: "/start",
-
->>>>>>> Stashed changes
 				scope: "email profile",
 				approval_prompt: "force"
 			},
