@@ -31,12 +31,12 @@ hr{
   display: block;
   background-image: url('../img/google_signin.png');
   color: white;
-  width: 386px;
-  height: 96px;
+  width: 184px;
+  height: 48px;
   white-space: nowrap;
 }
 #customBtn:hover {
   cursor: pointer;
-  background: rgba(255,165,0,.5) url('../img/google_signin.png');
+  background: url('../img/google_signin.png');
 
 }
