@@ -80,9 +80,11 @@ var Login = {
 				access_token: token 
 			},
 			success: function(response){
-				Login.session["email"] = response["email"];
-				Login.session["name"] = response["name"];
-				Login.session["picture"] = response["picture"];
+				localStorage.setItem("email", response["email"]);
+				localStorage.setItem("name", response["name"]);
+				localStorage.setItem("picture", response["picture"]);
+				
+				UI.updateLogIn();
 			},
 			error: function(){
 				console.log("Couldn't retrieve email info");
