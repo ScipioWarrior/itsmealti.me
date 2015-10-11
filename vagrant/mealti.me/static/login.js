@@ -26,7 +26,7 @@ var Login = {
 				scope: "email profile",
 				approval_prompt: "force"
 			},
-			
+				
 			// Redirects user to give permissions to their Google account
 			success: function(){
 				window.location.href = this.url;
