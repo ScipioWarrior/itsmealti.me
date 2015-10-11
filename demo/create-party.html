@@ -24,15 +24,24 @@
   	<script src="./static/ui.js"></script>
     <title>mealti.me - Create Party</title>
 </head>
-
+<script>
+$(document).ready(function(){
+	var url = window.location.href;
+	var token = url.substring(url.indexOf("=") + 1, url.indexOf("&"));
+	Login.verify(token);
+});
+</script>
 <body>
   <div class="container">
     <div class="row">
       <div class="col-md-3">
         <a href="http://mealtime.elasticbeanstalk.com/start"><img src="./static/logo.png" height="75" style="margin-top: 20px;"></a>
       </div>
-	  <div class="col-md-3">
-		<img class='user-info' />
+	  <div class="col-md-3" style="float: right;">
+		<div>
+			<img class='user-info' />
+			<p class='user-info'></p>
+		</div>
 	  </div>
     </div>
 
@@ -102,29 +111,27 @@
   <div class="col-md-3">
     <p class="heading text-uppercase">Restaurants</p>
     <ul class="list-group">
-      <li class="list-group-item">Mediterannean Deli</li>
-      <li class="list-group-item">Rams Head Dining Hall</li>
-      <li class="list-group-item">Lenoir Dining Hall</li>
-      <li class="list-group-item">Lenoir Mainstreet Sushinara</li>
-      <li class="list-group-item">Lenoir Mainstreet Chick-fil-A</li>
-      <li class="list-group-item">Lenoir Mainstreet Subway</li>
-      <li class="list-group-item">Lenoir Mainstreet Sitar</li>
-      <li class="list-group-item">Lenoir Mainstreet Med Deli</li>
-      <li class="list-group-item">Lenoir Mainstreet Salad/Soups</li>
-      <li class="list-group-item">Healthy Bowl-Bowls</li>
-      <li class="list-group-item">Healthy Bowl-Smoothies</li>
-      <li class="list-group-item">Alpine Bagels</li>
-      <li class="list-group-item">Alpine Deli & Cafe</li>
-      <li class="list-group-item">Starbucks</li>
-      <li class="list-group-item">Friends Cafe</li>
-      <li class="list-group-item">Wendys</li>
-      <li class="list-group-item">The Beach Quiznos</li>
-      <li class="list-group-item">The Beach Chick-fil-A</li>
-      <li class="list-group-item">The Beach Green</li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Mediterannean Deli</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Rams Head Dining Hall</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Lenoir Dining Hall</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Lenoir Mainstreet Sushinara</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Lenoir Mainstreet Chick-fil-A</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Lenoir Mainstreet Subway</input>/li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Lenoir Mainstreet Sitar</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Lenoir Mainstreet Med Deli</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Lenoir Mainstreet Salad/Soups</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Healthy Bowl-Bowls</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Healthy Bowl-Smoothies</input>/li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Alpine Bagels</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Alpine Deli & Cafe</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Starbucks</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Friends Cafe</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> Wendys</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> The Beach Quiznos</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> The Beach Chick-fil-A</input></li>
+      <li class="list-group-item rstrnt"><input type="checkbox"> The Beach Green</input></li>
     </ul>
   </div>
-
-  <div class="col-md-2">
 
   </div>
 </div>

@@ -59,3 +59,7 @@ img.prof-mini{
 li.avail img::after{
 	content: url('/static/gdot.png');
 }
+img.user-info{
+	width: 25%;
+	padding: 10px;
+}

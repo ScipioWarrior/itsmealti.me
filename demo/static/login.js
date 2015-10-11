@@ -14,7 +14,7 @@ var Login = {
 	* Makes the inital log in request, asking for an OAuth 2.0 token
 	*/
 	connect: function(){
-		window.location.href = "https://accounts.google.com/o/oauth2/auth?response_type=token&client_id=665577778199-dnfk2bkeb7s2c0esl6gomd0cvvubskur.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Fmealtime.elasticbeanstalk.com%2Fstart&scope=email+profile&approval_prompt=force";
+		window.location.href = "https://accounts.google.com/o/oauth2/auth?response_type=token&client_id=665577778199-dnfk2bkeb7s2c0esl6gomd0cvvubskur.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Fmealtime.elasticbeanstalk.com%2Fdemo%2Fcreate-party.html&scope=email+profile&approval_prompt=force";
 	},
 
 	/*
@@ -50,9 +50,11 @@ var Login = {
 				access_token: token 
 			},
 			success: function(response){
-				Login.session["email"] = response["email"];
-				Login.session["name"] = response["name"];
-				Login.session["picture"] = response["picture"];
+				localStorage.setItem("email", response["email"]);
+				localStorage.setItem("name", response["name"]);
+				localStorage.setItem("picture", response["picture"]);
+				
+				UI.showLogInfo();
 			},
 			error: function(){
 				console.log("Couldn't retrieve email info");
