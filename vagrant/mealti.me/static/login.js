@@ -77,12 +77,12 @@ var Login = {
 		$.ajax({
 			url: "https://www.googleapis.com/userinfo/v2/me",
 			data:{
-				access_token: token
+				access_token: token 
 			},
 			success: function(response){
-				session["email"] = response["email"];
-				session["name"] = response["name"];
-				session["picture"] = response["picture"];
+				Login.session["email"] = response["email"];
+				Login.session["name"] = response["name"];
+				Login.session["picture"] = response["picture"];
 			},
 			error: function(){
 				console.log("Couldn't retrieve email info");
