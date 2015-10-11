@@ -51,3 +51,11 @@ a{
 #customBtn:hover {
   cursor: pointer;
 }
+
+img.prof-mini{
+	width: 15%;
+	margin: 10px;
+}
+li.avail img::after{
+	content: url('/static/gdot.png');
+}
