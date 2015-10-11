@@ -23,19 +23,19 @@ var Login = {
 
 				// Change this line for production
 				redirect_uri: "http://mealtime.elasticbeanstalk.com/start",
-<<<<<<< HEAD
+
 				dataType: "jsonp",
 				
 				scope: "email profile",
 				approval_prompt: "force"
 			},
 				
-=======
+
 				scope: "email profile",
 				approval_prompt: "force"
 			},
 
->>>>>>> origin/master
+
 			// Redirects user to give permissions to their Google account
 			success: function(){
 				window.location.href = this.url;
@@ -88,11 +88,6 @@ var Login = {
 				console.log("Couldn't retrieve email info");
 			}
 		});
-<<<<<<< HEAD
 	}	
 }
 
-=======
-	}
-}
->>>>>>> origin/master
