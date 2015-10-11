@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,11 @@
 
   	<!-- jQuery and things-->
   	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-  	<script src="login.js"></script>
-  	<script src="ui.js"></script>
+  	<script src="{{ url_for('static', filename='login.js') }}"></script>
+  	<script src="{{ url_for('static', filename='ui.js') }}"></script>
     <title>{% block title %}{% endblock %}</title>
 </head>
+
 <body>
   <div class="container">
     <div class="row">
@@ -44,8 +45,7 @@
       <div class="col-md-4 text-center"><a href="/restaurants">Restaurants</a></div>
     </div>
   </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="bootstrap.min.js"></script>
+  <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
 </body>
 </html>

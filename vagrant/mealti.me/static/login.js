@@ -1,5 +1,5 @@
 var Login = {
-	
+
 	/*
 	* Holds info for the logged-in user's Google acc.
 	* email is their email address, name is their full name, picture is a link to their profile pic
@@ -9,7 +9,7 @@ var Login = {
 		name: "",
 		picture: ""
 	},
-	
+
 	/*
 	* Makes the inital log in request, asking for an OAuth 2.0 token
 	*/
@@ -19,14 +19,19 @@ var Login = {
 			data: {
 				response_type: "token",
 				client_id: "665577778199-dnfk2bkeb7s2c0esl6gomd0cvvubskur.apps.googleusercontent.com",
-				
+
 				// Change this line for production
+<<<<<<< Updated upstream
 				redirect_uri: "http://mealtime.elasticbeanstalk.com/start",
 				
+=======
+				redirect_uri: "/start",
+
+>>>>>>> Stashed changes
 				scope: "email profile",
 				approval_prompt: "force"
 			},
-			
+
 			// Redirects user to give permissions to their Google account
 			success: function(){
 				window.location.href = this.url;
@@ -36,29 +41,29 @@ var Login = {
 			}
 		});
 	},
-	
+
 	/*
 	* For security reasons, verifies the auth. token we recieved from the Login.connect() method
 	* Returns a JSON object that on success, gives a bunch of useless info, and on failure, gives an error description
 	*/
-	verify: function(token){		
+	verify: function(token){
 		$.ajax({
 			url: "https://www.googleapis.com/oauth2/v1/tokeninfo",
 			data: {
 				access_token: token
 			},
-			
+
 			success: function(response){
 				console.log("We have the token!");
 				Login.getInfo(token);
 			},
-			
+
 			error: function(){
 				console.log("Cannot verify token");
 			},
 		});
 	},
-	
+
 	/*
 	* Populates the Login.session{} object for the user using the auth token
 	*/
@@ -78,5 +83,5 @@ var Login = {
 				console.log("Couldn't retrieve email info");
 			}
 		});
-	}	
+	}
 }

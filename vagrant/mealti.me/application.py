@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-app = Flask(__name__)
+application = Flask(__name__)
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -10,21 +10,21 @@ Base.metadata.bind = engine
 DBSession = sessionmaker(bind = engine)
 session = DBSession()
 
-@app.route('/')
-@app.route('/start')
+@application.route('/')
+@application.route('/start')
 def startPage():
     return render_template('start.html')
 
-@app.route('/create-party')
+@application.route('/create-party')
 def createParty():
     return render_template('create_party.html')
 
-@app.route('/restaurants')
+@application.route('/restaurants')
 def showRestaurant():
     restaurants = session.query(Restaurant).all()
     return render_template('restaurants.html', restaurants = restaurants)
 
 
 if __name__ == "__main__":
-    app.debug = True
-    app.run(host = "0.0.0.0", port = 5000)
+    application.debug = True
+    application.run()
