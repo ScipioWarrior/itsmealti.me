@@ -1,1 +1,2 @@
 # itsmealti.me
+It's Mealtime is a web app designed to make planning meals with others as easy as the pie you get from the dining halls. Built in 24 hours for HackNC 2015, the user is presented with a clean, simple web app to manage parties, which are groups of friends who want to eat together. User accounts are managed through Google OAuth and all data is run through an AWS-hosted python server. Local restaurants, friends, invites, and parties are stored in hosted databases.
